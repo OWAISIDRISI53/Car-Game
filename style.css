@@ -20,8 +20,6 @@ body {
   border: 2px solid red;
   position: relative;
   overflow: hidden;
-  background: url("bg.jpg") no-repeat;
-  background-size: cover;
 }
 
 .car {
@@ -120,3 +118,30 @@ width: 100%;
   border-radius: 10px;
   font-size: 1.3rem;
 }
+
+ .runway {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: #1378bc;
+  border-left: 15px solid rgba(0, 0, 0, 0.25);
+  border-right: 15px solid rgba(0, 0, 0, 0.25);
+}
+
+ .runway::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 100%;
+  background: #fff;
+  background: repeating-linear-gradient(transparent 0%, transparent 50%, #fff 50%, #fff 100%);
+  background-size: 20px 320px;
+  animation: animRunway 0.7s linear infinite;
+}
+
+
+@keyframes animRunway {
+
