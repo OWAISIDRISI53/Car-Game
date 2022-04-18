@@ -144,4 +144,15 @@ width: 100%;
 
 
 @keyframes animRunway {
+  0% {
+    background-position-y: 0px;
+  }
+
+  100% {
+    background-position-y: 320px;
+  }
+}
+
+
+
 
