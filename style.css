@@ -61,31 +61,12 @@ width: 100%;
 
 }
 
-.up {
-  position: absolute;
-  top: 0%;
-  left: 33%;
-  padding: 8px 20px;
-  cursor: pointer;
-
-}
-
-.down {
-  position: absolute;
-  bottom: 0%;
-  left: 33%;
-  padding: 8px 20px;
-  cursor: pointer;
-
-}
-
-
 .comp {
   height: 90px;
   width: 70px;
   position: absolute;
   top: 7%;
-  left: 40%;
+  left: 14%;
   animation: move 1.3s linear infinite;
 }
 
