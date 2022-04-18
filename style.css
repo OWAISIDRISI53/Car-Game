@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.game {
+  height: 60vh;
+  width: 80%;
+  margin: 10% auto;
+  border: 2px solid red;
+  position: relative;
+  overflow: hidden;
+  background: url("/bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.car {
+  height: 100px;
+  width: 80px;
+  position: absolute;
+  bottom: 7%;
+  left: 100px;
+}
+
+.car img,.comp img {
+    height: 100%;
+width: 100%;
+}
+
+.navi {
+  height: 100px;
+  width: 200px;
+  margin: -3% auto;
+  position: relative;
+}
+
+.left {
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.right {
+  position: absolute;
+  top: 30%;
+  right: 0%;
+  padding: 12px 20px;
+  cursor: pointer;
+
+}
+
+.up {
+  position: absolute;
+  top: 0%;
+  left: 33%;
+  padding: 8px 20px;
+  cursor: pointer;
+
+}
+
+.down {
+  position: absolute;
+  bottom: 0%;
+  left: 33%;
+  padding: 8px 20px;
+  cursor: pointer;
+
+}
+
+
+.comp {
+  height: 90px;
+  width: 70px;
+  position: absolute;
+  top: 7%;
+  left: 40%;
+  animation: move 1.3s linear infinite;
+}
+
+
+@keyframes move {
+  0% {
+    top: 0px;
+  }
+
+  100% {
+    top: 501px;
+  }
+
+}
+
+
+.gamePlay {
+  height: auto;
+  width: auto;
+}
+
+
+.gameOver {
+  height: 150px;
+  width: 60%;
+  background: royalblue;
+  margin: auto;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  display: none;
+}
+
+
+.gameOver h2 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.gameOver h3 {
+  font-size: 1.3rem;
+  margin: 10px 0;
+
+}
+
+
+.gameOver .btn {
+  margin: 20px 0;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.3rem;
+}
