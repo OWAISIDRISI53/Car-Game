@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+
+  <!-- HTML -->
+
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="gamePlay">
+
+    <div class="game">
+      <div id="blueCar" class="comp">
+        <img src="/blue.png" alt="/blue.png">
+      </div>
+      <div id="car" class="car">
+        <img src="/mycar.png" alt="/mycar.png">
+      </div>
+
+    </div>
+
+    <div class="navi">
+      <button onclick="left()" class="left">Left</button>
+      <button onclick="right()" class="right">Right</button>
+    </div>
+  </div>
+
+
+  <div class="gameOver">
+    <h2>Game Over</h2>
+    <h3>
+      <span class="result">Score: 0</span>
+    </h3>
+
+    <button class="btn" onclick="location.reload();">Start</button>
+
+  </div>
+  <script src="main.js"></script>
+
+  <!-- Project -->
+</body>
+
+</html>
