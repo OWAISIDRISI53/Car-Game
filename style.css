@@ -67,17 +67,17 @@ width: 100%;
   position: absolute;
   top: 7%;
   left: 14%;
-  animation: move 1.3s linear infinite;
+  animation: move 1.7s linear infinite;
 }
 
 
 @keyframes move {
   0% {
-    top: 0px;
+    top: -10%;
   }
 
   100% {
-    top: 501px;
+    top: 110%;
   }
 
 }
