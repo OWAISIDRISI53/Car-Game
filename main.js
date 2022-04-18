@@ -28,7 +28,7 @@ blueCar.addEventListener('animationiteration', () => {
   count++;
   
   if (count > 20) {
-    blueCar.style.animationDuration = '0.5s'
+    blueCar.style.animationDuration = '1s'
   }
   
 })
